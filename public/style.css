@@ -1,0 +1,9 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+button:hover, a:hover{
+    cursor: pointer;
+}

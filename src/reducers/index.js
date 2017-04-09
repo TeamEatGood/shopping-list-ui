@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
+import shoppingItems from './shoppingItems';
 
-const todoApp = combineReducers({
+const groceryApp = combineReducers({
+    shoppingItems
 });
 
-export default todoApp;
+export default groceryApp;
