@@ -50,7 +50,10 @@ input[type=text]{
     border-bottom: 2px solid 	#6c648B;
     margin-bottom:5px;
   text-align:center;
-  text-color: #6BBAA7;
+  color: #6c648B;
+  font-family: "Dosis";
+  font-size:20px;
+
 }
 
 input[type=number]{
@@ -59,7 +62,9 @@ input[type=number]{
     border-bottom: 2px solid 	#6c648B;
     margin-bottom:5px;
   text-align:center;
-  text-color:#6BBAA7;
+  color:#6c648B;
+  font-family: "Dosis";
+  font-size:20px;
 }
 
 .banner{

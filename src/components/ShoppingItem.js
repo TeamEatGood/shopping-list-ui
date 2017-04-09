@@ -10,9 +10,11 @@ const ShoppingItem = ({ onClick, bought, name, amount, lastPurchased, normalInte
             textDecoration: bought ? 'line-through' : 'none'
         }}
     >
+        <p>
         <div>{name} x {amount}</div>
         {lastPurchased && <div>Last Purchased: {moment(lastPurchased.substring(0, 10)).format("l")}</div>}
         {normalInterval && <div>Usually bought {normalInterval} days ago</div>}
+        </p>
     </li>
 );
 
