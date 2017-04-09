@@ -9,8 +9,8 @@ const ShoppingItem = ({ onClick, bought, name, amount, lastPurchased, normalInte
         }}
     >
         <div>{name} x {amount}</div>
-        <div>Last Purchased: {lastPurchased}</div>
-        <div>Usually bought {normalInterval} days ago</div>
+        {lastPurchased && <div>Last Purchased: {lastPurchased}</div>}
+        {normalInterval && <div>Usually bought {normalInterval} days ago</div>}
     </li>
 );
 

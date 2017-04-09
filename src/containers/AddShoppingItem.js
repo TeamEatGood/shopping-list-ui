@@ -3,21 +3,30 @@ import { connect } from 'react-redux';
 import { addShoppingItem } from '../actions/shoppingItems';
 
 let AddShoppingItem = ({ dispatch }) => {
-    let input;
+    let nameInput;
+    let amountInput;
 
     return (
         <div>
             <form onSubmit={e => {
                 e.preventDefault();
-                if(!input.value.trim()){
+                if(!nameInput.value.trim() || !amountInput.value.trim()){
                     return;
                 }
-                dispatch(addShoppingItem(input.value));
-                input.value = '';
+                dispatch(addShoppingItem(nameInput.value, parseInt(amountInput.value)));
+                nameInput.value = '';
+                amountInput.value = '';
             }}>
-                <input ref={node => {
-                    input = node;
+                <label htmlFor="name">Name:</label>
+                <input id="name" type="text" ref={node => {
+                    nameInput = node;
                 }} />
+                
+                 <label htmlFor="amount">Amount:</label>
+                 <input id="amount" type="number" min="1" ref={node => {
+                    amountInput = node;
+                }} />
+               
                 <button type="submit">Add Item</button>
             </form>
         </div>
