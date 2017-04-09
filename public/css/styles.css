@@ -18,22 +18,36 @@ button:hover, a:hover{
     font-family: "Raleway";
 }
 
-.addShoppingItem{
-    font-family: "Dosis";
-    color: #FBA100;
+.shoppingBagContents{
+    position:absolute;
+    top:75px;
+    left: 10px;
+    padding: 10px;
+    width:98%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    background-color: #deaa87;
 }
 
-Button{
+.addShoppingItem{
+    font-family: "Dosis";
+    color: #6c648B;
+    text-align: center;
+}
+
+button{
     font-family: "Dosis";
     background-color: #FBA100;
     border-radius: 10px;
     color: #6c648B;
+    font-size: 24px;
 }
 
 input[type=text]{
     border: none;
     background-color:rgba(244, 233, 164, 0.0);
-    border-bottom: 2px solid 	#FBA100;
+    border-bottom: 2px solid 	#6c648B;
     margin-bottom:5px;
   text-align:center;
   text-color: #6BBAA7;
@@ -42,7 +56,7 @@ input[type=text]{
 input[type=number]{
     border:none;
     background-color:rgba(244, 233, 164, 0.0);
-    border-bottom: 2px solid 	#FBA100;
+    border-bottom: 2px solid 	#6c648B;
     margin-bottom:5px;
   text-align:center;
   text-color:#6BBAA7;
@@ -53,4 +67,26 @@ input[type=number]{
     height:auto;
     width:50%;
     margin:auto;
+}
+
+.bag{
+    display: block;
+    width: 90%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+}
+
+.bag img{
+    width:100%;
+}
+
+.cup{
+    position: fixed;
+    bottom:0;
+    right:0;
+    height:10%;
+    width: auto;
+    margin:10px;
 }
