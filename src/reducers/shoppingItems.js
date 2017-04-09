@@ -6,6 +6,7 @@ const shoppingItem = (state = {}, action) => {
       return {
         id: action.id,
         name: action.name,
+        amount: action.amount,
         lastPurchased: action.last_purchased,
         normalInterval: action.norm_interval,
         bought: false
