@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ShoppingItem from './ShoppingItem';
 
 const ShoppingItemList = ({ shoppingItems, onShoppingItemClick }) => (
-    <ul>
+    <ul className="shoppingItemList">
         {shoppingItems.map(shoppingItem =>
             <ShoppingItem
                 key={shoppingItem.id}

@@ -1,9 +1,56 @@
 html{
     box-sizing: border-box;
+    background-color: #6c648B;
 }
 *, *:before, *:after{
     box-sizing: inherit;
 }
+
+body{
+        width:100%;
+}
+
 button:hover, a:hover{
     cursor: pointer;
+}
+
+.shoppingItem{
+    font-family: "Raleway";
+}
+
+.addShoppingItem{
+    font-family: "Dosis";
+    color: #FBA100;
+}
+
+Button{
+    font-family: "Dosis";
+    background-color: #FBA100;
+    border-radius: 10px;
+    color: #6c648B;
+}
+
+input[type=text]{
+    border: none;
+    background-color:rgba(244, 233, 164, 0.0);
+    border-bottom: 2px solid 	#FBA100;
+    margin-bottom:5px;
+  text-align:center;
+  text-color: #6BBAA7;
+}
+
+input[type=number]{
+    border:none;
+    background-color:rgba(244, 233, 164, 0.0);
+    border-bottom: 2px solid 	#FBA100;
+    margin-bottom:5px;
+  text-align:center;
+  text-color:#6BBAA7;
+}
+
+.banner{
+    display:block;
+    height:auto;
+    width:50%;
+    margin:auto;
 }

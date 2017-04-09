@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 const ShoppingItem = ({ onClick, bought, name, amount, lastPurchased, normalInterval }) => (
     <li
+        className="shoppingItem"
         onClick={onClick}
         style={{
             textDecoration: bought ? 'line-through' : 'none'

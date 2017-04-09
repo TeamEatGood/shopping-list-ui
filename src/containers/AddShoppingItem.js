@@ -7,7 +7,7 @@ let AddShoppingItem = ({ dispatch }) => {
     let amountInput;
 
     return (
-        <div>
+        <div className="addShoppingItem">
             <form onSubmit={e => {
                 e.preventDefault();
                 if(!nameInput.value.trim() || !amountInput.value.trim()){
@@ -27,7 +27,7 @@ let AddShoppingItem = ({ dispatch }) => {
                     amountInput = node;
                 }} />
                
-                <button type="submit">Add Item</button>
+                <button type="submit" className="addButton">Add Item</button>
             </form>
         </div>
     );
