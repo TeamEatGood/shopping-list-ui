@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import todoApp from './reducers';
+import groceryApp from './reducers';
 import App from './components/App';
 
 const logger = store => next => action => {
@@ -29,7 +29,7 @@ const crashReporter = store => next => action => {
 };
 
 let store = createStore(
-    todoApp,
+    groceryApp,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
     applyMiddleware(logger, crashReporter)
 );

@@ -1,8 +1,12 @@
 import React from 'react';
+import AddShoppingItem from '../containers/AddShoppingItem';
+import VisibleShoppingItemList from '../containers/VisibleShoppingItemList';
+
 
 const Home = () => (
     <div>
-        Hello
+        <AddShoppingItem />
+        <VisibleShoppingItemList />
     </div>
 );
 
