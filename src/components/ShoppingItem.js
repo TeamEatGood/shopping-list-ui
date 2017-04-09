@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import moment from 'moment';
 
 const ShoppingItem = ({ onClick, bought, name, amount, lastPurchased, normalInterval }) => (
     <li
@@ -10,7 +11,7 @@ const ShoppingItem = ({ onClick, bought, name, amount, lastPurchased, normalInte
         }}
     >
         <div>{name} x {amount}</div>
-        {lastPurchased && <div>Last Purchased: {lastPurchased}</div>}
+        {lastPurchased && <div>Last Purchased: {moment(lastPurchased.substring(0, 10)).format("l")}</div>}
         {normalInterval && <div>Usually bought {normalInterval} days ago</div>}
     </li>
 );

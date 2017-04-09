@@ -28,7 +28,7 @@ const shoppingItems = (state = [ {
                                         "id": 312,
                                         "name": "COOKIES: HOLIDAY/SPECIAL OCCAS",
                                         "amount": 1,
-                                        "lastPurchased": "2017-04-00T20:31:17.635554",
+                                        "lastPurchased": "2017-04-01T20:31:17.635554",
                                         "normalInterval": 5,
                                         "bought": false,
                                     },
