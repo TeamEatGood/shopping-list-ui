@@ -7,8 +7,8 @@ const shoppingItem = (state = {}, action) => {
         id: action.id,
         name: action.name,
         amount: action.amount,
-        lastPurchased: action.last_purchased,
-        normalInterval: action.norm_interval,
+        lastPurchased: action.lastPurchased,
+        normalInterval: action.normalInterval,
         bought: false
       };
     case TOGGLE_SHOPPING_ITEM:
@@ -24,7 +24,22 @@ const shoppingItem = (state = {}, action) => {
   }
 };
 
-const shoppingItems = (state = [], action) => {
+const shoppingItems = (state = [ {
+                                        "id": 312,
+                                        "name": "COOKIES: HOLIDAY/SPECIAL OCCAS",
+                                        "amount": 1,
+                                        "lastPurchased": "2017-04-00T20:31:17.635554",
+                                        "normalInterval": 5,
+                                        "bought": false,
+                                    },
+                                    {
+                                        "id": 315,
+                                        "name": "BREAKFAST SWEETS,SW GDS:MUFFINS-LSS THN 6",
+                                        "amount": 1,
+                                        "lastPurchased": "2017-03-08T20:31:17.635554",
+                                        "normalInterval": 3,
+                                        "bought": false
+                                    } ], action) => {
   switch (action.type) {
     case ADD_SHOPPING_ITEM:
       return [

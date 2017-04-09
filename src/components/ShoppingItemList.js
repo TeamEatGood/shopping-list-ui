@@ -18,7 +18,10 @@ ShoppingItemList.propTypes = {
     shoppingItems: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.number.isRequired,
         bought: PropTypes.bool.isRequired,
-        name: PropTypes.string.isRequired
+        name: PropTypes.string.isRequired,
+        amount: PropTypes.number,
+        lastPurchased: PropTypes.string,
+        normalInterval: PropTypes.number
     }).isRequired).isRequired,
     onShoppingItemClick: PropTypes.func.isRequired
 };
